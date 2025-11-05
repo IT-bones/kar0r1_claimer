@@ -4,7 +4,6 @@ on:
   schedule:
     - cron: '*/15 15-22 * * *'  # Every 15 minutes from 3pm to 10:45pm UTC
     - cron: '0 23 * * *'        # At 11:00pm UTC
-  workflow_dispatch:
 
 jobs:
   selenium-job:
@@ -31,4 +30,3 @@ jobs:
           chmod +x /usr/bin/chromedriver
       - name: Run script
         run: python autoclm1.py
-
